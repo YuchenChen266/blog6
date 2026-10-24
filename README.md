@@ -2,16 +2,15 @@
 This project creates simulated longitudinal household panel data, uses SQL joins to match parents and children, and compares intergenerational income elasticity (IGE) estimates from single-year income and multi-year average income. It demonstrates life-cycle bias caused by transitory income shocks.
 
 ## Repository Structure
-- analysis.Rmd: Full analysis, code and written discussion for submission
-- analysis.html: Rendered webpage
-- /data: Simulated panel datasets in CSV format
+- blog6.ipynb: Full analysis, code and written discussion for submission
+- blog6.html: Rendered webpage
 - /figures: Exported scatter plots (PNG)
 
 ## Replication Instructions
-1. Open analysis.Rmd in RStudio
-2. Install required packages: tidyverse, dbplyr
-3. Knit the document. All datasets and figures will be saved automatically into the /data and /figures folders.
+1. Open blog6.ipynb
+2. Install required packages: pandas, sqlite3, matplotlib, numpy
+3. Run all cells. The code generates simulated data automatically and saves figures into the /figures folder.
 4. The two scatter plots compare IGE estimates before and after averaging income to reduce temporary income noise.
 
 ## Notes
-The data is randomly simulated. Parental permanent income and child permanent income are independently generated, so the resulting IGE coefficients are negative. The exercise focuses on illustrating life-cycle bias as a statistical mechanism.
+The data is randomly simulated inside the notebook. Parental permanent income and child permanent income are generated within the code, so no external CSV data file is needed. The exercise focuses on illustrating life-cycle bias as a statistical mechanism.
